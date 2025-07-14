@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Signup_Login_page</title>
+    <!-- SweetAlert2 -->
+     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <!-- adding css static file -->
+    <link rel="stylesheet" href="/styles.css" />
+</head>
+<body>
+     <h1>Welcome, <%= user.name %>!</h1>
+     <button class="logoutbtn" onclick="window.location.href='/user/logout'">LogOut</button>
+
+     <% if (success && success.length > 0) { %>
+  <script>
+    Swal.fire({
+      toast: true,
+      position: 'top-end',
+      icon: 'success',
+      title: `<%= success[0].replace(/"/g, '\\"') %>`,
+      showConfirmButton: false,
+      timer: 3000,
+      timerProgressBar: true
+    });
+  </script>
+<% } %>
+
+<% if (error && error.length > 0) { %>
+  <script>
+    Swal.fire({
+      toast: true,
+      position: 'top-end',
+      icon: 'error',
+      title: `<%= error[0].replace(/"/g, '\\"') %>`,
+      showConfirmButton: false,
+      timer: 3000,
+      timerProgressBar: true
+    });
+  </script>
+<% } %>
+</body>
+</html>

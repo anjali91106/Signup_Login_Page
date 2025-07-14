@@ -1,0 +1,98 @@
+/* Nude-themed styles */
+
+body {
+  margin: 0;
+  padding: 0;
+  background: linear-gradient(135deg, #fdf6f0, #f6e7de);
+  font-family: 'Quicksand', sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.custom-form {
+  background: #fffaf7;
+  padding: 35px 40px;
+  border-radius: 16px;
+  box-shadow: 0 10px 30px rgba(205, 173, 149, 0.2);
+  max-width: 420px;
+  width: 100%;
+  border: 1px solid #f0e1d2;
+}
+
+.custom-form .form-label {
+  font-weight: 500;
+  margin-bottom: 5px;
+  color: #5e4b45;
+}
+
+.custom-form .form-control {
+  border-radius: 10px;
+  padding: 10px;
+  font-size: 14px;
+  border: 1px solid #e0cfc0;
+  background-color: #fffdfc;
+  color: #4a3c37;
+}
+
+.custom-form .form-control:focus {
+  border-color: #d8b8a6;
+  outline: none;
+  box-shadow: 0 0 0 2px rgba(216, 184, 166, 0.3);
+}
+
+.custom-form .form-text {
+  font-size: 12px;
+  color: #a38979;
+  margin-top: 5px;
+}
+
+.custom-form .btn-primary , .logoutbtn {
+  width: 100%;
+  padding: 10px;
+  margin-top: 20px;
+  border-radius: 10px;
+  background-color: #d6a88d;
+  border: none;
+  color: white;
+  font-weight: bold;
+  transition: background 0.3s ease;
+}
+
+.custom-form .btn-primary:hover, .logoutbtn {
+  background-color: #c98b6e;
+}
+
+/* Nude-style alert */
+.custom-alert {
+  position: absolute;
+  top: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: #fbeee6;
+  color: #6b4e3d;
+  padding: 12px 20px;
+  border: 1px solid #ebd3c4;
+  border-radius: 10px;
+  font-weight: 500;
+  text-align: center;
+  max-width: 90%;
+  box-shadow: 0 4px 12px rgba(105, 79, 58, 0.1);
+  animation: fadeIn 0.4s ease;
+}
+
+.logoutbtn{
+  width: fit-content;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translate(-50%, -10px);
+  }
+  to {
+    opacity: 1;
+    transform: translate(-50%, 0);
+  }
+}
