@@ -50,7 +50,7 @@ This project is a full-stack authentication system built with **Node.js**, **Exp
 1. **Clone the Repository**
    ```bash
    git clone (https://github.com/anjali91106/Signup_Login_Page.git)
-   cd auth-system
+   cd --folderName---
 
 2. **Install Dependencies**
 
@@ -99,7 +99,7 @@ Edit
 
 3. Access Protected Route
 
-GET to http://localhost:3000//userdashboard
+GET to http://localhost:3000/user/dashboard
 
 Send cookie (from login response) or test with middleware.
 
