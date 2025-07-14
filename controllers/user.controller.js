@@ -11,6 +11,7 @@ const signUp = async (req, res) => {
     const userExists = await userModel.findOne({ Email });
     if (userExists) {
       req.flash('error', 'User with same Email id already exits!');
+      return res.redirect('/user/signup');
     }
 
     const newUser = new userModel({
