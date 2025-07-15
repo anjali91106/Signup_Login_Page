@@ -51,7 +51,7 @@ const path = require('path');
 app.set('view engine', 'ejs');
 app.set('views', path.join(__dirname, 'views'));
 
-const PORT = 3000;
+const PORT = process.env.PORT;
 //listening the current port
 app.listen(PORT, () => {console.log(`Server is working fine on the port: ${PORT}`)});
 app.get('/', (req, res) => {
